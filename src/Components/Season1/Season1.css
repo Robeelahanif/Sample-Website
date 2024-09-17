@@ -1,0 +1,104 @@
+.season1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0 2rem 0;
+    background: var(--bg-darkblue);
+    color: white;
+    margin-top: 2rem;
+}
+.season1>h1{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.countup{
+    padding: 0px;
+    display: flex;
+    gap: 7rem;
+    margin-top: 2rem;
+}
+.content{
+    display: flex;
+    padding: 3rem 4rem;
+}
+.counter>h1{
+    font-size: 4.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+.counter>span{
+    line-height: 30px;
+    font-size: 1.8rem;
+}
+.content{
+    display: flex;
+}
+.blank{
+    width: 750px;
+    height: 300px;
+    background: #dcdcdc;
+    border-radius: 5px;
+}
+.text{
+    width: 60%;
+    text-align: left;
+    margin-left: 2rem;
+}
+.text h2{
+    margin: 0;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.4;
+}
+.text:nth-child(2),
+.text:nth-child(3),
+.text:nth-child(4)
+{
+    font-size: .8rem;
+    font-weight: normal;
+    line-height: 24px;
+    color: rgb(175, 175, 175);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20;
+}
+@media only screen and (max-width:530px){
+    .content{
+        width: 80%;
+        flex-direction: column;
+    }
+    .counter>span{
+        line-height: 30px;
+        font-size: .8rem;
+    }
+    .season1{
+        width: 100%;
+    }
+    .season1>h1{
+        font-size: 1rem;
+    }
+    .text h2{
+        font-size: .9rem;
+    }
+    .blank{
+        display: none;
+    }
+    .countup{
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+    .counter>h1{
+        font-size: 1rem;
+    }
+    .text:nth-child(2),
+.text:nth-child(3),
+.text:nth-child(4)
+{
+    font-size: .6rem;
+    line-height: 14px;
+}
+}

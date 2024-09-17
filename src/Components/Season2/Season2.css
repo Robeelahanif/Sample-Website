@@ -1,0 +1,69 @@
+.season2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0 2rem 0;
+    margin-top: 2rem;
+}
+.season2 h1{
+    font-size: 2.5rem;
+    line-height: 8px;
+    color: rgb(45, 45, 45);
+}
+.season2 h1>span{
+    color: var(--bg-orange);
+    font-size: 2.5rem;
+}
+.season2 span{
+    font-size: 1.2rem;
+    color: rgba(123, 123, 123, 0.888);
+    margin-top: 1rem;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    position: relative;
+}
+.video>img:nth-child(1){
+    width: 100%;
+    height: 70vh;
+    margin-top: 3rem;
+    object-fit: cover;
+    border: 1px groove rgb(238, 92, 92);
+    border-radius: 10px;
+}
+.video .vbtn{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+}
+@media only screen and (max-width:530px){
+    .season2 h1{
+        font-size: 1.5rem;
+        line-height: 8px;
+        color: rgb(45, 45, 45);
+    }
+    .season2 h1>span{
+        font-size: 1.5rem;
+    }
+    .season2 span{
+        font-size: .9rem;
+    }
+    .video{
+        width: 55%;
+    }
+    .video>img:nth-child(1){
+        width: 50%;
+        height: 50vh;
+    }
+    .video .vbtn{
+        width: 45px;
+        height: 45px;
+    }
+}
